@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="UTF-8" />
+     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Movie DB</title>
+	<link rel="stylesheet" href="{{ url_for('static',filename='styles/main_page.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static',filename='styles/searchpage.css') }}">
+
+    <script src="{{ url_for('static',filename='javascript/homepage.js') }}"></script>
+    <script src="{{ url_for('static',filename='javascript/searchpage.js') }}"></script>
+</head>
+
+<body style="font-family: sans-serif;">
+	<div class="upper_bar">
+		<b>THE MOVIE DB</b>
+	</div>
+
+    <div id="root_ending">
+    <div id="root_container" class="container">
+
+        <div class="navigation_panel">
+
+                <button id="panel_button_home" class= 'panel_options' onclick="get_home_page();">
+                    <span class="search_home_text">Home </span>
+                    <span class="arrow" >&rarr;</span>
+                </button>
+
+
+
+                <button id="panel_button_search" class="panel_options" onclick="render_search()">
+                    <span class="search_home_text">Search </span>
+                    <span class="arrow"> &rarr; </span>
+                </button>
+
+        </div>
+
+
+
+        <div id="movies_tv">
+            <script>
+                get_home_page();
+            </script>
+        </div>
+
+
+    </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+  <div class="ending">
+        <span id="first_text"><i>Designed and developed by Shriya Katoch</i></span>
+        <span id="second_text"><i>Powered by TMDB</i></span>
+    </div>
+
+    </div>
+<div id="search_result_modal" class="modal">
+      <div id="modal_close_button" class="close" onclick="closeModal()">
+        &times;
+      </div>
+      <div class="modal_content_container">
+        <img id="search_result_backdrop" class="sr_backdrop" src="" />
+          <br><br>
+        <div id="title_icon">
+        <div id="search_result_title"></div>
+            <a id="icon_tmdb" target="_blank">&nbsp;&#9432;</a>
+        </div>
+        <div id="search_result_year_genres">
+          <div id="search_result_year"></div>
+          <div id="search_result_genres"></div>
+        </div>
+        <div id="search_result_rating_review count">
+          <div id='star_vote_model'style="display: inline">&#x2B51;</div>
+            <div id="vote_average_model"></div>
+            <div id="vote_count_model">&nbsp;</div>
+        </div>
+          <br><br>
+        <div id="search_result_overview"></div>
+          <br>
+        <div id="search_result_languages"></div>
+        <div id="cast_container" style="margin-top: 50px">
+          <h2 style="font-family: sans-serif">Cast</h2>
+          <div id="cast_credits_container"></div>
+        </div>
+        <div id="reviews_container" style="margin-top: 50px">
+          <h2 style="font-family: sans-serif">Reviews</h2>
+          <div id="reviews_list_container" style="text-align: justify"></div>
+        </div>
+      </div>
+    </div>
+
+
+</body>
+</html>

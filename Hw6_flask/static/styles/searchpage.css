@@ -1,0 +1,344 @@
+
+#keyword_button_label{
+	position: relative;
+	left: 30%;
+	color: white;
+}
+
+#keyword_field{
+	position: relative;
+	left: 32%;
+	width:400px;
+	border:0px;
+	border-radius: 2.5px;
+}
+
+#category_dropdown_label{
+	color: white;
+	position: relative;
+	left: 30%;
+}
+
+#category_dropdown{
+	position: relative;
+	left: 32%;
+	border-radius: 2.5px;
+	border: 0px;
+}
+
+#search_title{
+	font-size: 25px;
+	color: white;
+	position: relative;
+	left: 50%;
+
+}
+
+#search_button{
+	position: relative;
+	left: 50%;
+	padding: 5px;
+	padding-left: 15px;
+	padding-right: 15px;
+	background-color: black;
+	color: white;
+	border: 0;
+	border-radius: 2px;
+}
+
+#search_button:hover{
+	background-color:#940000 !important;
+}
+
+.keyword_dropdown_star{
+	color: red;
+	display: inline-block;
+	position: relative;
+	left: 30%;
+}
+
+#clear_button{
+	position: relative;
+	left: 55%;
+	padding: 5px;
+	padding-left: 15px;
+	padding-right: 15px;
+	background-color: black;
+	color: white;
+	border: 0;
+	border-radius: 2px;
+}
+
+#clear_button:hover{
+	background-color: #940000 !important;
+}
+
+#display_results{
+	background-color: white;
+}
+#search_top_div{
+	background-color: #982117;
+	padding-bottom: 50px;
+	background-image: linear-gradient(#982117,black);
+}
+.model_element_movie{
+	background: black;
+	display: flex;
+	height: 300px;
+	border-left: solid 8px #982117;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.image_div{
+	width: 200px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+.image_model_movie{
+	padding-left: 8px;
+	width: 200px;
+	height: 290px;
+}
+.content_div{
+	display: inline-block;
+	margin-left: 40px;
+	padding-top: 25px;
+}
+.content_div div{
+	opacity: 0.8;
+}
+.title_model_movie{
+	color: white;
+	font-size: 20px;
+	font-family: sans-serif;
+	opacity: 1.0 !important;
+	font-weight: 600;
+}
+
+.year_model_movie{
+	color: white;
+	top: 40px;
+	font-family: Georgia;
+	display: inline-block;
+}
+.vote_average_movie{
+	color: red;
+	position: relative;
+	display: inline-block;
+	font-family: Georgia;
+}
+
+.star_vote{
+	color: #982117;
+	position: relative;
+	display: inline-block;
+}
+.vote_total_movie{
+	color: white;
+	position: relative;
+	display: inline-block;
+	font-family: Georgia;
+}
+.overview_movie{
+
+	color: white;
+	position: relative;
+	-webkit-line-clamp: 3;
+	-webkit-box-orient: vertical;
+	overflow: hidden;
+	display: -webkit-box;
+}
+
+.blank_line{
+	background-color: black;
+	height: 40px;
+
+}
+.genre_div{
+	color: white;
+	position: relative;
+	display: inline-block;
+	left: 5px;
+	font-family: sans-serif;
+	font-size: 14px;
+}
+
+.more_button{
+	background-color: #940000;
+	color: white;
+	padding: 10px;
+	border: 0;
+}
+#icon_tmdb{
+	color: #982117;
+	text-decoration: none;
+	display: inline;
+
+}
+#title_icon{
+	display: inline;
+}
+#search_result_title{
+	display: inline;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 10%;
+    z-index: 3;
+    margin-left: 20%;
+    margin-right: 20%;
+    background-color: #cacaca;
+    padding: 20px 20px 20px 40px;
+    height: 80vh;
+    overflow: auto;
+    width: 850px;
+}
+
+#search_result_overview {
+    width: available;
+}
+
+.modal::-webkit-scrollbar {
+    display: none; /* Safari and Chrome */
+}
+
+.modal_content_container {
+    float: left;
+    width: 800px;
+}
+
+.close {
+    color: #aaa;
+    display: inline-block;
+    float: right;
+    font-size: 35px;
+    font-weight: bold;
+    margin-left: 20px;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+.sr_backdrop {
+    width: 100%;
+    display: block;
+}
+
+.credits_details_container {
+    text-align: center;
+    width: 175px;
+    display: inline-block;
+    justify-content: center;
+    margin: 12px;
+}
+
+.cast_image {
+    width: inherit;
+}
+
+.cast_name_character{
+    -webkit-line-clamp: 1;
+	-webkit-box-orient: vertical;
+	overflow: hidden;
+	display: -webkit-box;
+}
+
+.review{
+    width: inherit;
+}
+
+.review_text{
+    width: inherit;
+    -webkit-line-clamp: 3;
+	-webkit-box-orient: vertical;
+	overflow: hidden;
+	display: -webkit-box;
+}
+
+.reviewer_div{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+
+.review_break_line{
+    margin: 20px 100px 40px 100px;
+    border-top: 2px solid #8c8b8b;
+}
+
+
+.review_creation_date{
+    font-family: Georgia;
+}
+
+#reviews_container{
+    width: inherit;
+}
+#class_credits_container {
+    text-align: justify;
+}
+
+#search_result_year {
+    padding-right: 5px;
+    border-right: 1px solid black;
+    display: inline;
+    font-family: Georgia;
+}
+
+#search_result_title {
+    width: 100%;
+    text-align: left;
+    font-size: 25px;
+}
+
+#search_result_year_genres {
+    width: 100%;
+    text-align: left;
+    margin: 10px 0 10px;
+}
+
+#search_result_genres {
+    display: inline;
+    padding-left: 5px;
+}
+#star_vote_model{
+	display: inline-block;
+	color: #940000;
+}
+#vote_average_model{
+	display: inline-block;
+	font-family: Georgia;
+	color: #940000;
+}
+#vote_count_model{
+	display: inline-block;
+	font-family: Georgia;
+}
+
+#search_result_languages{
+	font-style: italic;
+}
+
+#showing_results_text_div{
+	color: #FFFFFF;
+	display: None;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	opacity: 0.8;
+}
+#no_results{
+	color: #cacaca;
+	text-align: center;
+	font-size: medium;
+	margin-top: 100px;
+	display: None;
+}
+
